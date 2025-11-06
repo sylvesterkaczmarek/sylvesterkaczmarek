@@ -17,15 +17,10 @@ Based in London.
 
 - <a href="https://sylvesterkaczmarek.com" target="_blank" rel="noopener noreferrer">sylvesterkaczmarek.com</a>
 
-## Featured
-
-<a href="https://github.com/sylvesterkaczmarek/Sylvester-Kaczmarek/blob/main/assets/room-space-journal-autumn-2025-cover-sylvester-kaczmarek.jpeg" target="_blank" rel="noopener noreferrer">
-  <img src="./cover.jpg" alt="ROOM Space Journal cover featuring Sylvester Kaczmarek" width="560">
-</a>
 
 ## Featured
 
-<img src="https://github.com/sylvesterkaczmarek/Sylvester-Kaczmarek/blob/main/assets/room-space-journal-autumn-2025-cover-sylvester-kaczmarek.jpeg" alt="ROOM Space Journal cover featuring Sylvester Kaczmarek" width="560">
+<img src="https://github.com/sylvesterkaczmarek/Sylvester-Kaczmarek/blob/main/assets/room-space-journal-autumn-2025-cover-sylvester-kaczmarek.jpeg" alt="ROOM Space Journal cover featuring Sylvester Kaczmarek" width="460">
 
 
 ## Tech stack
