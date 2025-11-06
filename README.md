@@ -15,7 +15,7 @@ Based in London.
 
 ## Links
 
-- Website https://sylvesterkaczmarek.com
+- <a href="https://sylvesterkaczmarek.com" target="_blank" rel="noopener noreferrer">sylvesterkaczmarek.com</a>
 
 ## Tech stack
 
