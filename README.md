@@ -17,12 +17,17 @@ Based in London.
 
 - Website https://sylvesterkaczmarek.com
 
-## Stats
+## Tech stack
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sylvesterkaczmarek&theme=github_dark">
-  <img alt="Stats" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sylvesterkaczmarek&theme=default">
-</picture>
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+![ONNX](https://img.shields.io/badge/ONNX-005CED?logo=onnx&logoColor=white)
+![CUDA](https://img.shields.io/badge/CUDA-76B900?logo=nvidia&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
+
+## Languages
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sylvesterkaczmarek&theme=github_dark">
