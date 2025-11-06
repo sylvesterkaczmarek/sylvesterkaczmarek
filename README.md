@@ -1,16 +1,30 @@
-## Hi there 👋
+## About
 
-<!--
-**sylvesterkaczmarek/sylvesterkaczmarek** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I build secure, reliable AI systems for space, national security, and critical infrastructure.
 
-Here are some ideas to get you started:
+## Focus areas
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- onboard intelligence
+- edge AI for remote sensing
+- model compression and quantization
+- space cybersecurity
+- neuromorphic methods
+- verification and validation
+
+Based in London.
+
+## Links
+
+- Website https://sylvesterkaczmarek.com
+
+## Stats
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sylvesterkaczmarek&theme=github_dark">
+  <img alt="Stats" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sylvesterkaczmarek&theme=default">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sylvesterkaczmarek&theme=github_dark">
+  <img alt="Top languages" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sylvesterkaczmarek&theme=default">
+</picture>
