@@ -17,11 +17,9 @@ Based in London.
 
 - <a href="https://sylvesterkaczmarek.com" target="_blank" rel="noopener noreferrer">sylvesterkaczmarek.com</a>
 
-
 ## Featured
 
 <img src="https://github.com/sylvesterkaczmarek/Sylvester-Kaczmarek/blob/main/assets/room-space-journal-autumn-2025-cover-sylvester-kaczmarek.jpeg" alt="ROOM Space Journal cover featuring Sylvester Kaczmarek" width="460">
-
 
 ## Tech stack
 
@@ -29,9 +27,14 @@ Based in London.
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
 ![ONNX](https://img.shields.io/badge/ONNX-005CED?logo=onnx&logoColor=white)
 ![CUDA](https://img.shields.io/badge/CUDA-76B900?logo=nvidia&logoColor=white)
+![TensorRT](https://img.shields.io/badge/TensorRT-76B900?logo=nvidia&logoColor=white)
+![ROS 2](https://img.shields.io/badge/ROS%202-22314E?logo=ros&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white)
+![LaTeX](https://img.shields.io/badge/LaTeX-008080?logo=latex&logoColor=white)
 
 ## Languages
 
