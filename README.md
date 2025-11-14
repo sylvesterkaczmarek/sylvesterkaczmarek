@@ -4,12 +4,12 @@ I build secure, reliable AI systems for space, national security, and critical i
 
 ## Focus areas
 
-- onboard intelligence
-- edge AI for remote sensing
-- model compression and quantization
-- space cybersecurity
-- neuromorphic methods
-- verification and validation
+- onboard intelligence for spacecraft  
+- edge AI for remote sensing and ISR  
+- model compression, quantization, and deployment  
+- space cybersecurity and secure autonomy  
+- neuromorphic methods, hardware-in-the-loop evaluation  
+- verification, validation, and runtime assurance
 
 Based in London.
 
