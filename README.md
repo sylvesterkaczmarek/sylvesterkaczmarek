@@ -4,14 +4,14 @@ I build safe, secure, and reliable AI and autonomous systems for critical enviro
 
 ## Focus areas
 
-- onboard intelligence for spacecraft  
-- edge AI for remote sensing and ISR  
-- model compression, quantization, and deployment  
-- space cybersecurity and secure autonomy  
-- neuromorphic methods, hardware-in-the-loop evaluation  
-- verification, validation, and runtime assurance
+- safe, secure AI and autonomous systems
+- AI alignment, robustness, and runtime assurance
+- onboard and edge intelligence for spacecraft and remote systems
+- neuromorphic computing and adaptive learning
+- robotics and physical-world autonomy
+- model compression, quantization, and deployment
 
-Based in London.
+Based in the UK.
 
 ## Links
 
