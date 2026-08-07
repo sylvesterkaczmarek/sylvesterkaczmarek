@@ -11,11 +11,13 @@ I build safe, secure, and reliable AI and autonomous systems for critical enviro
 - robotics and physical-world autonomy
 - model compression, quantization, and deployment
 
-Based in the UK.
+Based in London.
 
 ## Links
 
-- <a href="https://sylvesterkaczmarek.com" target="_blank" rel="noopener noreferrer">sylvesterkaczmarek.com</a>
+- [Website](https://www.sylvesterkaczmarek.com)
+- [GitHub Portfolio](https://github.com/sylvesterkaczmarek/Sylvester-Kaczmarek)
+- [LinkedIn](https://www.linkedin.com/in/sylvesterkaczmarek/)
 
 ## Featured
 
