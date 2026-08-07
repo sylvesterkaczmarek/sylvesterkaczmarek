@@ -15,9 +15,9 @@ Based in London.
 
 ## Links
 
-- [Website](https://www.sylvesterkaczmarek.com)
-- [GitHub Portfolio](https://github.com/sylvesterkaczmarek/Sylvester-Kaczmarek)
-- [LinkedIn](https://www.linkedin.com/in/sylvesterkaczmarek/)
+- <a href="https://sylvesterkaczmarek.com" target="_blank" rel="noopener noreferrer">Website</a>
+- <a href="https://github.com/sylvesterkaczmarek/Sylvester-Kaczmarek" target="_blank" rel="noopener noreferrer">GitHub Portfolio</a>
+- <a href="https://www.linkedin.com/in/sylvesterkaczmarek/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
 
 ## Featured
 
