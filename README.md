@@ -1,6 +1,6 @@
 ## About
 
-I build secure, reliable AI systems for space, national security, and critical infrastructure.
+I build safe, secure, and reliable AI and autonomous systems for critical environments.
 
 ## Focus areas
 
