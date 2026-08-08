@@ -22,7 +22,7 @@ Based in London.
 
 ## Featured
 
-<img src="https://github.com/sylvesterkaczmarek/Sylvester-Kaczmarek/blob/main/assets/room-space-journal-autumn-2025-cover-sylvester-kaczmarek.jpeg" alt="ROOM Space Journal cover featuring Sylvester Kaczmarek" width="460">
+<img src="https://sylvesterkaczmarek.github.io/assets/images/room-space-journal-autumn-2025-cover-sylvester-kaczmarek.jpeg" alt="ROOM Space Journal cover featuring Sylvester Kaczmarek" width="460">
 
 ## Tech stack
 
