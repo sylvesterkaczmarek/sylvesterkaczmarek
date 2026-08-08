@@ -17,6 +17,7 @@ Based in London.
 
 - <a href="https://sylvesterkaczmarek.com" target="_blank" rel="noopener noreferrer">Website</a>
 - <a href="https://github.com/sylvesterkaczmarek/Sylvester-Kaczmarek" target="_blank" rel="noopener noreferrer">GitHub Portfolio</a>
+- <a href="https://frontier.sylvesterkaczmarek.com/" target="_blank" rel="noopener noreferrer">Sylvester's Frontier</a>
 - <a href="https://www.linkedin.com/in/sylvesterkaczmarek/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
 
 ## Featured
