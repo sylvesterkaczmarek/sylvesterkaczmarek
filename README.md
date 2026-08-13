@@ -49,6 +49,14 @@ Based in London.
 ![ROS 2](https://img.shields.io/badge/ROS%202-22314E?logo=ros&logoColor=white)
 ![Isaac ROS](https://img.shields.io/badge/Isaac%20ROS-76B900?logo=nvidia&logoColor=white)
 
+**Space systems**
+
+![NASA cFS](https://img.shields.io/badge/NASA%20cFS-0B3D91?logo=nasa&logoColor=white)
+![F Prime](https://img.shields.io/badge/F%20Prime-1B365D?logoColor=white)
+![NASA SPICE](https://img.shields.io/badge/NASA%20SPICE-0B3D91?logo=nasa&logoColor=white)
+![Space ROS](https://img.shields.io/badge/Space%20ROS-22314E?logo=ros&logoColor=white)
+![CCSDS](https://img.shields.io/badge/CCSDS-005A9C?logoColor=white)
+
 **Engineering and research**
 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
