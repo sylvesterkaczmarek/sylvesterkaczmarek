@@ -49,6 +49,7 @@ Based in London.
 **Robotics and perception**
 
 ![C++](https://img.shields.io/badge/C++-00599C?logo=c%2B%2B&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white)
 ![ROS 2](https://img.shields.io/badge/ROS%202-22314E?logo=ros&logoColor=white)
 ![Isaac ROS](https://img.shields.io/badge/Isaac%20ROS-76B900?logo=nvidia&logoColor=white)
