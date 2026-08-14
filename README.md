@@ -2,6 +2,8 @@
 
 I build safe, secure, and reliable AI and autonomous systems for critical environments.
 
+![Trustworthy AI](https://img.shields.io/badge/Trustworthy%20AI-Safe%20%7C%20Secure%20%7C%20Reliable-2ea44f)
+
 ## Focus areas
 
 - safe, secure AI and autonomous systems
