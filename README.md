@@ -15,9 +15,9 @@ I build safe, secure, and reliable AI and autonomous systems for critical enviro
 
 Based in London.
 
-## Selected engineering
+## Open-source engineering
 
-Open-source contributor to **OpenAI's Agents SDK**, with broader work across safe AI, autonomous systems, and edge intelligence.
+Contributing engineering work to **OpenAI's Agents SDK**, with merged and released changes spanning agent execution, runtime safety, sandbox security, and developer tooling.
 
 [![OpenAI](https://img.shields.io/badge/OpenAI-Agents%20SDK%20Contributor-000000?logo=openai&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Aopenai+is%3Amerged)
 [![Arm](https://img.shields.io/badge/Arm-Developer%20Ambassador-0091BD?logo=arm&logoColor=white)](https://www.arm.com/)
