@@ -15,6 +15,11 @@ I build safe, secure, and reliable AI and autonomous systems for critical enviro
 
 Based in London.
 
+## Selected engineering
+
+[![OpenAI](https://img.shields.io/badge/OpenAI-Agents%20SDK%20Contributor-000000?logo=openai&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Aopenai+is%3Amerged)
+[![Arm](https://img.shields.io/badge/Arm-Developer%20Ambassador-0091BD?logo=arm&logoColor=white)](https://www.arm.com/)
+
 ## Links
 
 - <a href="https://sylvesterkaczmarek.com" target="_blank" rel="noopener noreferrer">Website</a>
