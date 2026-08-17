@@ -1,6 +1,6 @@
 ## About
 
-I build safe, secure, and reliable AI and autonomous systems for critical environments.
+Hi, I’m Sylvester. I build safe, secure, and reliable AI and autonomous systems for critical environments. Most of my work sits at the intersection of research and engineering, with a focus on systems that have to work reliably in the real world.
 
 ![Trustworthy AI](https://img.shields.io/badge/Trustworthy%20AI-Safe%20%7C%20Secure%20%7C%20Reliable-2ea44f)
 
@@ -12,8 +12,6 @@ I build safe, secure, and reliable AI and autonomous systems for critical enviro
 - neuromorphic computing and adaptive learning
 - robotics and physical-world autonomy
 - model compression, quantization, and deployment
-
-Based in London.
 
 ## Open-source engineering
 
