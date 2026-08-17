@@ -1,6 +1,6 @@
-## About
+## Hi, I’m Sylvester
 
-Hi, I’m Sylvester. I build safe, secure, and reliable AI and autonomous systems for critical environments. Most of my work sits at the intersection of research and engineering, with a focus on systems that have to work reliably in the real world.
+I build safe, secure, and reliable AI and autonomous systems for critical environments. Most of my work sits at the intersection of research and engineering, with a focus on systems that have to work reliably in the real world.
 
 [![Website](https://img.shields.io/badge/Website-0969DA?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=033B72)](https://sylvesterkaczmarek.com)
 [![Technical Portfolio](https://img.shields.io/badge/Technical%20Portfolio-6F42C1?style=for-the-badge&logo=githubpages&logoColor=white&labelColor=432874)](https://sylvesterkaczmarek.github.io/)
