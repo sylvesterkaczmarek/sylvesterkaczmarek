@@ -79,6 +79,6 @@ Contributing engineering work to **OpenAI's Agents** and **Google DeepMind's Mel
 
 ## Reach me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sylvesterkaczmarek/)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:space.stranger698@8shield.net)
-[![Repositories](https://img.shields.io/badge/Repositories-0969DA?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sylvesterkaczmarek?tab=repositories)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=004182)](https://www.linkedin.com/in/sylvesterkaczmarek/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=8B2D23)](mailto:space.stranger698@8shield.net)
+[![Repositories](https://img.shields.io/badge/Repositories-0969DA?style=for-the-badge&logo=github&logoColor=white&labelColor=033B72)](https://github.com/sylvesterkaczmarek?tab=repositories)
