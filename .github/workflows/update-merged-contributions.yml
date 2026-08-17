@@ -1,0 +1,73 @@
+name: Update merged contribution count
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: merged-contribution-count
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Count merged upstream contributions and update README
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const query = `is:pr author:${owner} is:merged`;
+
+            const merged = [];
+            for await (const response of github.paginate.iterator(
+              github.rest.search.issuesAndPullRequests,
+              { q: query, per_page: 100 }
+            )) {
+              merged.push(...response.data.items);
+            }
+
+            const ownerPrefix = `/repos/${owner.toLowerCase()}/`;
+            const count = merged.filter((pr) =>
+              !pr.repository_url.toLowerCase().includes(ownerPrefix)
+            ).length;
+
+            const path = "README.md";
+            const file = await github.rest.repos.getContent({ owner, repo, path });
+            if (Array.isArray(file.data) || !file.data.content || !file.data.sha) {
+              throw new Error("README.md did not resolve to a writable file");
+            }
+
+            const current = Buffer.from(file.data.content, "base64").toString("utf8");
+            const marker = /<!-- merged-contributions:start -->[\s\S]*?<!-- merged-contributions:end -->/;
+            if (!marker.test(current)) {
+              throw new Error("Merged-contribution markers are missing from README.md");
+            }
+
+            const replacement = [
+              "<!-- merged-contributions:start -->",
+              `**${count} merged contributions**`,
+              "<!-- merged-contributions:end -->",
+            ].join("\n");
+            const next = current.replace(marker, replacement);
+
+            if (next === current) {
+              core.info(`Merged contribution count is already ${count}`);
+              return;
+            }
+
+            await github.rest.repos.createOrUpdateFileContents({
+              owner,
+              repo,
+              path,
+              message: `chore: update merged contribution count to ${count}`,
+              content: Buffer.from(next, "utf8").toString("base64"),
+              sha: file.data.sha,
+            });
+
+            core.info(`Updated merged contribution count to ${count}`);
