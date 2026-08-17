@@ -25,7 +25,7 @@ Contributing engineering work to **OpenAI's Agents** and **Google DeepMind's Mel
 
 [![Website](https://img.shields.io/badge/Website-0969DA?style=flat-square&logo=googlechrome&logoColor=white)](https://sylvesterkaczmarek.com)
 [![Technical Portfolio](https://img.shields.io/badge/Technical%20Portfolio-6F42C1?style=flat-square&logo=githubpages&logoColor=white)](https://sylvesterkaczmarek.github.io/)
-[![Frontier](https://img.shields.io/badge/Frontier-F97316?style=flat-square&logo=rss&logoColor=white)](https://frontier.sylvesterkaczmarek.com/)
+[![Sylvester's Frontier](https://img.shields.io/badge/Sylvester%27s%20Frontier-F97316?style=flat-square&logo=rss&logoColor=white)](https://frontier.sylvesterkaczmarek.com/)
 
 ## Featured
 
