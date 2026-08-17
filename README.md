@@ -77,10 +77,3 @@ Contributing engineering work to **OpenAI's Agents** and **Google DeepMind's Mel
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white)
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?logo=latex&logoColor=white)
-
-## Languages
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sylvesterkaczmarek&theme=github_dark">
-  <img alt="Top languages" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sylvesterkaczmarek&theme=default">
-</picture>
