@@ -46,7 +46,6 @@ Contributing engineering work to **OpenAI's Agents** and **Google DeepMind's Mel
 ![ONNX](https://img.shields.io/badge/ONNX-005CED?logo=onnx&logoColor=white)
 ![CUDA](https://img.shields.io/badge/CUDA-76B900?logo=nvidia&logoColor=white)
 ![TensorRT](https://img.shields.io/badge/TensorRT-76B900?logo=nvidia&logoColor=white)
-![NVIDIA Jetson](https://img.shields.io/badge/NVIDIA%20Jetson-76B900?logo=nvidia&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white)
 
 **Robotics and perception**
@@ -56,6 +55,14 @@ Contributing engineering work to **OpenAI's Agents** and **Google DeepMind's Mel
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white)
 ![ROS 2](https://img.shields.io/badge/ROS%202-22314E?logo=ros&logoColor=white)
 ![Isaac ROS](https://img.shields.io/badge/Isaac%20ROS-76B900?logo=nvidia&logoColor=white)
+
+**Hardware and edge**
+
+![NVIDIA Jetson](https://img.shields.io/badge/NVIDIA%20Jetson-76B900?logo=nvidia&logoColor=white)
+![Arm](https://img.shields.io/badge/Arm-0091BD?logo=arm&logoColor=white)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?logo=raspberrypi&logoColor=white)
+![BrainChip Akida](https://img.shields.io/badge/BrainChip%20Akida-111827?logoColor=white)
+![PolarFire SoC](https://img.shields.io/badge/PolarFire%20SoC-EE3124?logo=microchip&logoColor=white)
 
 **Space systems**
 
