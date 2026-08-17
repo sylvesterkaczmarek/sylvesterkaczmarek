@@ -17,7 +17,7 @@ Hi, I’m Sylvester. I build safe, secure, and reliable AI and autonomous system
 
 ## Open-source engineering
 
-Contributing engineering work to **OpenAI's Agents** and **Google DeepMind's Melting Pot**, with merged changes across agent reliability, runtime safety, sandbox security, and multi-agent systems.
+Contributing engineering work to **OpenAI's Agents** and **Google DeepMind's Melting Pot**, with merged changes across agent reliability, runtime safety, sandbox security, tracing and provenance, and multi-agent systems.
 
 [![OpenAI](https://img.shields.io/badge/OpenAI-Agents%20Contributor-000000?logo=openai&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Aopenai+is%3Amerged)
 [![Google DeepMind](https://img.shields.io/badge/Google%20DeepMind-Melting%20Pot%20Contributor-4285F4)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Agoogle-deepmind+is%3Amerged)
