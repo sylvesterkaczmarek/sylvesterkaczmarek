@@ -26,7 +26,9 @@ Contributing engineering work to **OpenAI's Agents** and **Google DeepMind's Mel
 ## Featured
 
 <div align="center">
-  <img src="https://sylvesterkaczmarek.github.io/assets/images/room-space-journal-autumn-2025-cover-sylvester-kaczmarek.jpeg" alt="ROOM Space Journal cover featuring Sylvester Kaczmarek" width="420">
+  <a href="https://room.eu.com/article/ai-cybersecurity-challenges-in-space" target="_blank" rel="noopener noreferrer">
+    <img src="https://sylvesterkaczmarek.github.io/assets/images/room-space-journal-autumn-2025-cover-sylvester-kaczmarek.jpeg" alt="ROOM Space Journal cover featuring Sylvester Kaczmarek" width="420">
+  </a>
 </div>
 
 ## Tech stack
