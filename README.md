@@ -23,10 +23,9 @@ Contributing engineering work to **OpenAI's Agents** and **Google DeepMind's Mel
 
 ## Links
 
-- <a href="https://sylvesterkaczmarek.com" target="_blank" rel="noopener noreferrer">Website</a>
-- <a href="https://sylvesterkaczmarek.github.io/" target="_blank" rel="noopener noreferrer">Technical Portfolio</a>
-- <a href="https://frontier.sylvesterkaczmarek.com/" target="_blank" rel="noopener noreferrer">Sylvester's Frontier</a>
-- <a href="https://www.linkedin.com/in/sylvesterkaczmarek/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+[![Website](https://img.shields.io/badge/Website-0969DA?style=flat-square&logo=googlechrome&logoColor=white)](https://sylvesterkaczmarek.com)
+[![Technical Portfolio](https://img.shields.io/badge/Technical%20Portfolio-6F42C1?style=flat-square&logo=githubpages&logoColor=white)](https://sylvesterkaczmarek.github.io/)
+[![Frontier](https://img.shields.io/badge/Frontier-F97316?style=flat-square&logo=rss&logoColor=white)](https://frontier.sylvesterkaczmarek.com/)
 
 ## Featured
 
