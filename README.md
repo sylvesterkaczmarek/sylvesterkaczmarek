@@ -75,3 +75,9 @@ Contributing engineering work to **OpenAI's Agents** and **Google DeepMind's Mel
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white)
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?logo=latex&logoColor=white)
+
+## Reach me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sylvesterkaczmarek/)
+[![Email](https://img.shields.io/badge/Email-Contact-555555?style=for-the-badge&logo=gmail&logoColor=white)](mailto:space.stranger698@8shield.net)
+[![Repositories](https://img.shields.io/badge/Repositories-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sylvesterkaczmarek?tab=repositories)
