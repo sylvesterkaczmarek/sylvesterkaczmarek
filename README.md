@@ -30,7 +30,9 @@ Contributing engineering work to **OpenAI's Agents** and **Google DeepMind's Mel
 
 ## Featured
 
-<img src="https://sylvesterkaczmarek.github.io/assets/images/room-space-journal-autumn-2025-cover-sylvester-kaczmarek.jpeg" alt="ROOM Space Journal cover featuring Sylvester Kaczmarek" width="460">
+<div align="center">
+  <img src="https://sylvesterkaczmarek.github.io/assets/images/room-space-journal-autumn-2025-cover-sylvester-kaczmarek.jpeg" alt="ROOM Space Journal cover featuring Sylvester Kaczmarek" width="420">
+</div>
 
 ## Tech stack
 
@@ -79,5 +81,5 @@ Contributing engineering work to **OpenAI's Agents** and **Google DeepMind's Mel
 ## Reach me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sylvesterkaczmarek/)
-[![Email](https://img.shields.io/badge/Email-Contact-555555?style=for-the-badge&logo=gmail&logoColor=white)](mailto:space.stranger698@8shield.net)
-[![Repositories](https://img.shields.io/badge/Repositories-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sylvesterkaczmarek?tab=repositories)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:space.stranger698@8shield.net)
+[![Repositories](https://img.shields.io/badge/Repositories-0969DA?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sylvesterkaczmarek?tab=repositories)
