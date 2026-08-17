@@ -2,7 +2,9 @@
 
 Hi, I’m Sylvester. I build safe, secure, and reliable AI and autonomous systems for critical environments. Most of my work sits at the intersection of research and engineering, with a focus on systems that have to work reliably in the real world.
 
-![Trustworthy AI](https://img.shields.io/badge/Trustworthy%20AI-Safe%20%7C%20Secure%20%7C%20Reliable-2ea44f)
+[![Website](https://img.shields.io/badge/Website-0969DA?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=033B72)](https://sylvesterkaczmarek.com)
+[![Technical Portfolio](https://img.shields.io/badge/Technical%20Portfolio-6F42C1?style=for-the-badge&logo=githubpages&logoColor=white&labelColor=432874)](https://sylvesterkaczmarek.github.io/)
+[![Sylvester's Frontier](https://img.shields.io/badge/Sylvester%27s%20Frontier-F97316?style=for-the-badge&logo=rss&logoColor=white&labelColor=9A3412)](https://frontier.sylvesterkaczmarek.com/)
 
 ## Focus areas
 
@@ -20,12 +22,6 @@ Contributing engineering work to **OpenAI's Agents** and **Google DeepMind's Mel
 [![OpenAI](https://img.shields.io/badge/OpenAI-Agents%20Contributor-000000?logo=openai&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Aopenai+is%3Amerged)
 [![Google DeepMind](https://img.shields.io/badge/Google%20DeepMind-Melting%20Pot%20Contributor-4285F4)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Agoogle-deepmind+is%3Amerged)
 [![Arm](https://img.shields.io/badge/Arm-Developer%20Ambassador-0091BD?logo=arm&logoColor=white)](https://www.arm.com/)
-
-## Links
-
-[![Website](https://img.shields.io/badge/Website-0969DA?style=flat-square&logo=googlechrome&logoColor=white)](https://sylvesterkaczmarek.com)
-[![Technical Portfolio](https://img.shields.io/badge/Technical%20Portfolio-6F42C1?style=flat-square&logo=githubpages&logoColor=white)](https://sylvesterkaczmarek.github.io/)
-[![Sylvester's Frontier](https://img.shields.io/badge/Sylvester%27s%20Frontier-F97316?style=flat-square&logo=rss&logoColor=white)](https://frontier.sylvesterkaczmarek.com/)
 
 ## Featured
 
@@ -79,6 +75,6 @@ Contributing engineering work to **OpenAI's Agents** and **Google DeepMind's Mel
 
 ## Reach me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=004182)](https://www.linkedin.com/in/sylvesterkaczmarek/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBmaWxsPSJ3aGl0ZSIgZD0iTTEwMC4zIDQ0OGwtOTIuOSAwIDAtMjk5LjEgOTIuOSAwIDAgMjk5LjF6TTUzLjggMTA4LjFDMjQuMSAxMDguMSAwIDgzLjUgMCA1My44IDAgMzkuNSA1LjcgMjUuOSAxNS44IDE1LjhzMjMuOC0xNS44IDM4LTE1LjggMjcuOSA1LjcgMzggMTUuOCAxNS44IDIzLjggMTUuOCAzOGMwIDI5LjctMjQuMSA1NC4zLTUzLjggNTQuM3pNNDQ3LjkgNDQ4bC05Mi43IDAgMC0xNDUuNmMwLTM0LjctLjctNzkuMi00OC4zLTc5LjItNDguMyAwLTU1LjcgMzcuNy01NS43IDc2LjdsMCAxNDguMS05Mi44IDAgMC0yOTkuMSA4OS4xIDAgMCA0MC44IDEuMyAwYzEyLjQtMjMuNSA0Mi43LTQ4LjMgODcuOS00OC4zIDk0IDAgMTExLjMgNjEuOSAxMTEuMyAxNDIuM2wwIDE2NC4zLS4xIDB6Ii8%2BPC9zdmc%2B&labelColor=004182)](https://www.linkedin.com/in/sylvesterkaczmarek/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=8B2D23)](mailto:space.stranger698@8shield.net)
 [![Repositories](https://img.shields.io/badge/Repositories-0969DA?style=for-the-badge&logo=github&logoColor=white&labelColor=033B72)](https://github.com/sylvesterkaczmarek?tab=repositories)
