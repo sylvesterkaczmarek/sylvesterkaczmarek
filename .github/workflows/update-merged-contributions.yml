@@ -27,17 +27,63 @@ jobs:
             const repo = context.repo.repo;
             const query = `is:pr author:${owner} is:merged`;
 
-            const merged = [];
-            for (let page = 1; page <= 10; page += 1) {
-              const response = await github.rest.search.issuesAndPullRequests({
-                q: query,
-                per_page: 100,
-                page,
+            const searchPublicly = async (page) => {
+              const url = new URL("https://api.github.com/search/issues");
+              url.searchParams.set("q", query);
+              url.searchParams.set("per_page", "100");
+              url.searchParams.set("page", String(page));
+
+              const response = await fetch(url, {
+                headers: {
+                  Accept: "application/vnd.github+json",
+                  "X-GitHub-Api-Version": "2022-11-28",
+                  "User-Agent": "merged-contribution-count",
+                },
               });
-              const items = response.data.items ?? [];
+
+              if (!response.ok) {
+                throw new Error(
+                  `Public GitHub search failed with ${response.status}: ${await response.text()}`,
+                );
+              }
+
+              return response.json();
+            };
+
+            const merged = [];
+            let usePublicSearch = false;
+
+            for (let page = 1; page <= 10; page += 1) {
+              let data;
+
+              if (!usePublicSearch) {
+                try {
+                  const response = await github.rest.search.issuesAndPullRequests({
+                    q: query,
+                    per_page: 100,
+                    page,
+                  });
+                  data = response.data;
+                } catch (error) {
+                  if (error.status !== 422) {
+                    throw error;
+                  }
+
+                  core.warning(
+                    "Authenticated GitHub search rejected the author qualifier; retrying with public search.",
+                  );
+                  usePublicSearch = true;
+                }
+              }
+
+              if (usePublicSearch) {
+                data = await searchPublicly(page);
+              }
+
+              const items = data.items ?? [];
               merged.push(...items);
 
-              if (items.length < 100 || merged.length >= response.data.total_count) {
+              if (items.length < 100 || merged.length >= data.total_count) {
                 break;
               }
             }
