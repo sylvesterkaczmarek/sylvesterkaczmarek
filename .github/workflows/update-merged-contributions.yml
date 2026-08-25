@@ -25,7 +25,10 @@ jobs:
           script: |
             const owner = context.repo.owner;
             const repo = context.repo.repo;
-            const query = `is:pr author:${owner} is:merged`;
+            // GitHub excludes contributions from organizations that have blocked a user.
+            // Excluding mi6 also avoids Search API permission resolution failures caused by
+            // that organization while keeping the counter aligned with GitHub's accounting.
+            const query = `is:pr author:${owner} is:merged -org:mi6`;
 
             const searchPublicly = async (page) => {
               const url = new URL("https://api.github.com/search/issues");
