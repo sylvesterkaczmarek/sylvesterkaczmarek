@@ -20,7 +20,7 @@ I build safe, secure, and reliable AI and autonomous systems for critical enviro
 Contributing engineering work to **OpenAI's Agents** and **Google DeepMind's Melting Pot**, with merged changes across agent reliability, runtime safety, sandbox security, tracing and provenance, and multi-agent systems.
 
 <!-- merged-contributions:start -->
-**123 merged contributions**
+**128 merged contributions**
 <!-- merged-contributions:end -->
 
 [![OpenAI](https://img.shields.io/badge/OpenAI-Agents%20Contributor-000000?logo=openai&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Aopenai+is%3Amerged)
