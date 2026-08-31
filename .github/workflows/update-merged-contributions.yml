@@ -108,14 +108,14 @@ jobs:
 
             const replacement = [
               "<!-- merged-contributions:start -->",
-              `**${mergedCount} merged upstream PRs · ${repositoryCount} external ${repositoryLabel}**`,
+              `**${mergedCount} merged upstream PRs across ${repositoryCount} upstream ${repositoryLabel}**`,
               "<!-- merged-contributions:end -->",
             ].join("\n");
             const next = current.replace(marker, replacement);
 
             if (next === current) {
               core.info(
-                `Open-source metrics are already ${mergedCount} merged upstream PRs across ${repositoryCount} external ${repositoryLabel}`,
+                `Open-source metrics are already ${mergedCount} merged upstream PRs across ${repositoryCount} upstream ${repositoryLabel}`,
               );
               return;
             }
@@ -130,5 +130,5 @@ jobs:
             });
 
             core.info(
-              `Updated open-source metrics to ${mergedCount} merged upstream PRs across ${repositoryCount} external ${repositoryLabel}`,
+              `Updated open-source metrics to ${mergedCount} merged upstream PRs across ${repositoryCount} upstream ${repositoryLabel}`,
             );
