@@ -86,12 +86,12 @@ Engineering contributions merged into **OpenAI**, **Google DeepMind**, and **The
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white)
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?logo=latex&logoColor=white)
 
+<p align="center">
+  <img src="./assets/systems-constellation.svg" alt="Animated systems constellation" width="720" />
+</p>
+
 ## Reach me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBmaWxsPSJ3aGl0ZSIgZD0iTTEwMC4zIDQ0OGwtOTIuOSAwIDAtMjk5LjEgOTIuOSAwIDAgMjk5LjF6TTUzLjggMTA4LjFDMjQuMSAxMDguMSAwIDgzLjUgMCA1My44IDAgMzkuNSA1LjcgMjUuOSAxNS44IDE1LjhzMjMuOC0xNS44IDM4LTE1LjggMjcuOSA1LjcgMzggMTUuOCAxNS44IDIzLjggMTUuOCAzOGMwIDI5LjctMjQuMSA1NC4zLTUzLjggNTQuM3pNNDQ3LjkgNDQ4bC05Mi43IDAgMC0xNDUuNmMwLTM0LjctLjctNzkuMi00OC4zLTc5LjItNDguMyAwLTU1LjcgMzcuNy01NS43IDc2LjdsMCAxNDguMS05Mi44IDAgMC0yOTkuMSA4OS4xIDAgMCA0MC44IDEuMyAwYzEyLjQtMjMuNSA0Mi43LTQ4LjMgODcuOS00OC4zIDk0IDAgMTExLjMgNjEuOSAxMTEuMyAxNDIuM2wwIDE2NC4zLS4xIDB6Ii8%2BPC9zdmc%2B&labelColor=004182)](https://www.linkedin.com/in/sylvesterkaczmarek/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBmaWxsPSJ3aGl0ZSIgZD0iTTEwMC4zIDQ0OGwtOTIuOSAwIDAtMjk5LjEgOTIuOSAwIDAgMjk5LjF6TTUzLjggMTA4LjFDMjQuMSAxMDguMSAwIDgzLjUgMCA1My44IDAgMzkuNSA1LjcgMjUuOSAxNS44IDE1LjhzMjMuOC0xNS44IDM4LTE1LjggMjcuOSA1LjcgMzggMTUuOCAxNS44IDIzLjggMTUuOCAzOGMwIDI5LjctMjQuMSA1NC4zLTUzLjggNTQuM3pNNDQ3LjkgNDQ4bC05Mi43IDAgMC0xNDUuNmMwLTM0LjctLjctNzkuMi00OC4zLTc5LjItNDguMyAwLTU1LjcgMzcuNy01NS43IDc2LjdsMCAxNDguMS05Mi44IDAgMCA0MC44IDEuMyAwYzEyLjQtMjMuNSA0Mi43LTQ4LjMgODcuOS00OC4zIDk0IDAgMTExLjMgNjEuOSAxMTEuMyAxNDIuM2wwIDE2NC4zLS4xIDB6Ii8%2BPC9zdmc%2B&labelColor=004182)](https://www.linkedin.com/in/sylvesterkaczmarek/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=8B2D23)](mailto:space.stranger698@8shield.net)
 [![Repositories](https://img.shields.io/badge/Repositories-0969DA?style=for-the-badge&logo=github&logoColor=white&labelColor=033B72)](https://github.com/sylvesterkaczmarek?tab=repositories)
-
-<p align="center">
-  <img src="./assets/systems-signal.svg" alt="Animated systems signal" width="680">
-</p>
