@@ -17,15 +17,15 @@ I build safe, secure, and reliable AI and autonomous systems for critical enviro
 
 ## Open-source engineering
 
-Contributing engineering work to **OpenAI's Agents** and **Google DeepMind's Melting Pot**, with merged changes across agent reliability, runtime safety, sandbox security, tracing and provenance, and multi-agent systems.
+Contributing engineering work across **OpenAI**, **Google DeepMind**, and **The Alan Turing Institute**.
 
 <!-- merged-contributions:start -->
-**148 merged contributions**
+**148 merged upstream PRs**
 <!-- merged-contributions:end -->
 
-[![OpenAI](https://img.shields.io/badge/OpenAI-Agents%20Contributor-000000?logo=openai&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Aopenai+is%3Amerged)
-[![Google DeepMind](https://img.shields.io/badge/Google%20DeepMind-Melting%20Pot%20Contributor-4285F4)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Agoogle-deepmind+is%3Amerged)
-[![Arm](https://img.shields.io/badge/Arm-Developer%20Ambassador-0091BD?logo=arm&logoColor=white)](https://www.arm.com/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-Contributor-000000?logo=openai&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Aopenai+is%3Amerged)
+[![Google DeepMind](https://img.shields.io/badge/Google%20DeepMind-Contributor-4285F4)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Agoogle-deepmind+is%3Amerged)
+[![The Alan Turing Institute](https://img.shields.io/badge/Alan%20Turing%20Institute-Contributor-2D2D2D)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Aalan-turing-institute+is%3Amerged)
 
 ## Featured
 
