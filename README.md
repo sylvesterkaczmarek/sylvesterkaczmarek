@@ -20,7 +20,7 @@ I build safe, secure, and reliable AI and autonomous systems for critical enviro
 Contributing engineering work across **OpenAI**, **Google DeepMind**, and **The Alan Turing Institute**.
 
 <!-- merged-contributions:start -->
-**148 merged upstream PRs**
+**149 merged upstream PRs · 24 external repositories**
 <!-- merged-contributions:end -->
 
 [![OpenAI](https://img.shields.io/badge/OpenAI-Contributor-000000?logo=openai&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Aopenai+is%3Amerged)
