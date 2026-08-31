@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="96" viewBox="0 0 680 96" fill="none" role="img" aria-labelledby="title desc" preserveAspectRatio="xMidYMid meet">
+  <title id="title">Animated systems signal</title>
+  <desc id="desc">A restrained technical signal connecting two endpoints through a central system node.</desc>
+  <style>
+    .line { stroke: #8c959f; stroke-opacity: .34; stroke-width: 1.5; }
+    .endpoint { fill: #8c959f; fill-opacity: .78; }
+    .core { fill: #4493f8; }
+    .pulse-a { fill: none; stroke: #4493f8; stroke-width: 1.5; animation: pulse-a 4.8s ease-in-out infinite; transform-origin: 340px 48px; }
+    .pulse-b { fill: none; stroke: #4493f8; stroke-width: 1.2; animation: pulse-b 4.8s ease-in-out infinite; transform-origin: 340px 48px; }
+    @keyframes pulse-a {
+      0%, 100% { r: 14px; stroke-opacity: .22; }
+      50% { r: 24px; stroke-opacity: 0; }
+    }
+    @keyframes pulse-b {
+      0%, 100% { r: 22px; stroke-opacity: .10; }
+      50% { r: 31px; stroke-opacity: 0; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .line { stroke: #8b949e; }
+      .endpoint { fill: #8b949e; }
+      .core { fill: #58a6ff; }
+      .pulse-a, .pulse-b { stroke: #58a6ff; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .pulse-a, .pulse-b { animation: none; }
+    }
+  </style>
+
+  <line class="line" x1="120" y1="48" x2="560" y2="48" />
+  <circle class="endpoint" cx="120" cy="48" r="4" />
+  <circle class="endpoint" cx="560" cy="48" r="4" />
+  <circle class="pulse-b" cx="340" cy="48" r="22" />
+  <circle class="pulse-a" cx="340" cy="48" r="14" />
+  <circle class="core" cx="340" cy="48" r="6" />
+</svg>
