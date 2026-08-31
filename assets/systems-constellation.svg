@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="112" viewBox="0 0 720 112" fill="none" role="img" aria-labelledby="title desc" preserveAspectRatio="xMidYMid meet">
+  <title id="title">Animated systems constellation</title>
+  <desc id="desc">A restrained premium technical animation showing connected system nodes and subtle signal flow.</desc>
+
+  <defs>
+    <linearGradient id="lineGrad" x1="120" y1="56" x2="600" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#94A3B8" stop-opacity="0.10"/>
+      <stop offset="50%" stop-color="#94A3B8" stop-opacity="0.40"/>
+      <stop offset="100%" stop-color="#94A3B8" stop-opacity="0.10"/>
+    </linearGradient>
+
+    <linearGradient id="arcGrad" x1="220" y1="56" x2="500" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0.10"/>
+      <stop offset="50%" stop-color="#60A5FA" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#60A5FA" stop-opacity="0.10"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .base { stroke: url(#lineGrad); stroke-width: 1.5; }
+    .arc { stroke: url(#arcGrad); stroke-width: 1.4; fill: none; }
+    .soft { stroke: #94A3B8; stroke-opacity: .16; stroke-width: 1; fill: none; }
+    .node { fill: #94A3B8; fill-opacity: .72; }
+    .core { fill: #60A5FA; }
+    .ring { fill: none; stroke: #60A5FA; stroke-opacity: .16; stroke-width: 1.4; }
+    .pulse { fill: #60A5FA; }
+    .pulse2 { fill: #A78BFA; }
+
+    .ringA {
+      animation: ringA 5.2s ease-in-out infinite;
+      transform-origin: 360px 56px;
+    }
+
+    .ringB {
+      animation: ringB 5.2s ease-in-out infinite;
+      transform-origin: 360px 56px;
+    }
+
+    @keyframes ringA {
+      0%, 100% { r: 14px; stroke-opacity: .18; }
+      50% { r: 26px; stroke-opacity: 0; }
+    }
+
+    @keyframes ringB {
+      0%, 100% { r: 24px; stroke-opacity: .10; }
+      50% { r: 36px; stroke-opacity: 0; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .node { fill: #8B949E; }
+      .core { fill: #58A6FF; }
+      .ring { stroke: #58A6FF; }
+      .pulse { fill: #58A6FF; }
+      .pulse2 { fill: #A78BFA; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ringA, .ringB, .pulse, .pulse2 {
+        animation: none !important;
+      }
+    }
+  </style>
+
+  <line class="base" x1="120" y1="56" x2="600" y2="56" />
+
+  <path class="soft" d="M220 56 C270 30, 320 30, 360 56" />
+  <path class="soft" d="M360 56 C400 30, 450 30, 500 56" />
+  <path class="arc" d="M220 56 C270 24, 320 24, 360 56" />
+  <path class="arc" d="M360 56 C400 24, 450 24, 500 56" />
+
+  <circle class="node" cx="120" cy="56" r="4"/>
+  <circle class="node" cx="220" cy="56" r="3.5"/>
+  <circle class="node" cx="500" cy="56" r="3.5"/>
+  <circle class="node" cx="600" cy="56" r="4"/>
+
+  <circle class="ring ringB" cx="360" cy="56" r="24"/>
+  <circle class="ring ringA" cx="360" cy="56" r="14"/>
+  <circle class="core" cx="360" cy="56" r="6"/>
+
+  <circle class="pulse" r="3.2">
+    <animateMotion dur="4.8s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#pathLeft"/>
+    </animateMotion>
+  </circle>
+
+  <circle class="pulse2" r="3.2">
+    <animateMotion dur="5.6s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#pathRight"/>
+    </animateMotion>
+  </circle>
+
+  <path id="pathLeft" d="M220 56 C270 24, 320 24, 360 56" fill="none"/>
+  <path id="pathRight" d="M360 56 C400 24, 450 24, 500 56" fill="none"/>
+</svg>
