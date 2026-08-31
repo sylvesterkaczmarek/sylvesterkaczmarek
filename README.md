@@ -20,7 +20,7 @@ I build safe, secure, and reliable AI and autonomous systems for critical enviro
 Engineering contributions merged into **OpenAI**, **Google DeepMind**, and **The Alan Turing Institute** codebases, spanning agent runtime safety, sandbox and tracing integrity, multi-agent systems, and scientific ML infrastructure.
 
 <!-- merged-contributions:start -->
-**149 merged upstream PRs · 24 external repositories**
+**149 merged upstream PRs across 24 upstream repositories**
 <!-- merged-contributions:end -->
 
 [![OpenAI](https://img.shields.io/badge/OpenAI-Contributor-000000?logo=openai&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Aopenai+is%3Amerged)
@@ -93,5 +93,5 @@ Engineering contributions merged into **OpenAI**, **Google DeepMind**, and **The
 [![Repositories](https://img.shields.io/badge/Repositories-0969DA?style=for-the-badge&logo=github&logoColor=white&labelColor=033B72)](https://github.com/sylvesterkaczmarek?tab=repositories)
 
 <p align="center">
-  <img src="./assets/orbit-network.svg" alt="Animated systems network" width="760">
+  <img src="./assets/systems-signal.svg" alt="Animated systems signal" width="680">
 </p>
