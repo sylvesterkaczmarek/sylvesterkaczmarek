@@ -41,31 +41,36 @@ jobs:
           script: |
             const owner = context.repo.owner;
             const repo = context.repo.repo;
+
+            async function githubSearch(query, label, perPage = 100, page = 1) {
+              const url = new URL("https://api.github.com/search/issues");
+              url.searchParams.set("q", query);
+              url.searchParams.set("per_page", String(perPage));
+              url.searchParams.set("page", String(page));
+
+              const response = await fetch(url, {
+                headers: {
+                  Accept: "application/vnd.github+json",
+                  Authorization: `Bearer ${process.env.PROFILE_GITHUB_TOKEN}`,
+                  "X-GitHub-Api-Version": "2022-11-28",
+                  "User-Agent": "open-source-profile-metrics",
+                },
+              });
+
+              if (!response.ok) {
+                throw new Error(
+                  `${label} search failed with ${response.status}: ${await response.text()}`,
+                );
+              }
+
+              return response.json();
+            }
+
             async function searchPullRequests(query, label) {
               const results = [];
 
               for (let page = 1; page <= 10; page += 1) {
-                const url = new URL("https://api.github.com/search/issues");
-                url.searchParams.set("q", query);
-                url.searchParams.set("per_page", "100");
-                url.searchParams.set("page", String(page));
-
-                const response = await fetch(url, {
-                  headers: {
-                    Accept: "application/vnd.github+json",
-                    Authorization: `Bearer ${process.env.PROFILE_GITHUB_TOKEN}`,
-                    "X-GitHub-Api-Version": "2022-11-28",
-                    "User-Agent": "open-source-profile-metrics",
-                  },
-                });
-
-                if (!response.ok) {
-                  throw new Error(
-                    `${label} search failed with ${response.status}: ${await response.text()}`,
-                  );
-                }
-
-                const data = await response.json();
+                const data = await githubSearch(query, label, 100, page);
                 const items = data.items ?? [];
                 results.push(...items);
 
@@ -81,6 +86,11 @@ jobs:
               return results;
             }
 
+            async function searchPullRequestCount(query, label) {
+              const data = await githubSearch(query, label, 1, 1);
+              return data.total_count ?? 0;
+            }
+
             // A private GitHub profile is excluded from site-wide activity search for
             // anonymous callers and the repository-scoped GITHUB_TOKEN. Authenticate
             // searches as the profile owner, while keeping GITHUB_TOKEN for the
@@ -89,30 +99,65 @@ jobs:
               `is:pr author:${owner} is:merged`,
               "Merged PR",
             );
-            const reviewed = await searchPullRequests(
-              `is:pr reviewed-by:${owner}`,
-              "Reviewed PR",
-            );
 
-            const ownerPrefix = `/repos/${owner.toLowerCase()}/`;
-            const isUpstream = (pr) => {
-              const repositoryPath = new URL(pr.repository_url).pathname.toLowerCase();
-              return !repositoryPath.startsWith(ownerPrefix);
+            // Repositories owned by the profile owner are internal, including current
+            // OrbiSky repositories. Kinemica, KRI, and ImperialSpaceSociety are also
+            // excluded from upstream metrics.
+            const internalOwners = new Set([
+              owner.toLowerCase(),
+              "kinemica",
+              "kri-research",
+              "imperialspacesociety",
+            ]);
+
+            const repositoryOwner = (pr) => {
+              const parts = new URL(pr.repository_url).pathname.split("/").filter(Boolean);
+              if (parts.length < 3 || parts[0] !== "repos") {
+                throw new Error(`Unexpected repository URL: ${pr.repository_url}`);
+              }
+              return parts[1].toLowerCase();
             };
 
-            const upstream = merged.filter(isUpstream);
-            const upstreamReviewed = reviewed.filter(isUpstream);
-
+            const upstream = merged.filter((pr) => !internalOwners.has(repositoryOwner(pr)));
             const mergedCount = upstream.length;
             const repositoryCount = new Set(
               upstream.map((pr) => new URL(pr.repository_url).pathname.toLowerCase()),
             ).size;
-            const reviewedCount = new Set(
-              upstreamReviewed.map((pr) => {
-                const repositoryPath = new URL(pr.repository_url).pathname.toLowerCase();
-                return `${repositoryPath}#${pr.number}`;
-              }),
-            ).size;
+
+            // GitHub's Search API exposes the exact distinct-PR total_count even when
+            // the result set exceeds the 1,000-item pagination limit. Subtract reviews
+            // in internal repositories with owner-scoped count queries.
+            const reviewedAllCount = await searchPullRequestCount(
+              `is:pr reviewed-by:${owner}`,
+              "Reviewed PR",
+            );
+            const reviewedPersonalCount = await searchPullRequestCount(
+              `is:pr reviewed-by:${owner} user:${owner}`,
+              "Reviewed PRs in personal repositories",
+            );
+            const reviewedKinemicaCount = await searchPullRequestCount(
+              `is:pr reviewed-by:${owner} org:kinemica`,
+              "Reviewed PRs in Kinemica",
+            );
+            const reviewedKriCount = await searchPullRequestCount(
+              `is:pr reviewed-by:${owner} org:kri-research`,
+              "Reviewed PRs in KRI",
+            );
+            const reviewedImperialCount = await searchPullRequestCount(
+              `is:pr reviewed-by:${owner} org:ImperialSpaceSociety`,
+              "Reviewed PRs in ImperialSpaceSociety",
+            );
+            const reviewedCount =
+              reviewedAllCount -
+              reviewedPersonalCount -
+              reviewedKinemicaCount -
+              reviewedKriCount -
+              reviewedImperialCount;
+
+            if (reviewedCount < 0) {
+              throw new Error("Internal reviewed-PR counts exceed the total reviewed-PR count");
+            }
+
             const repositoryLabel = repositoryCount === 1 ? "repository" : "repositories";
 
             const path = "README.md";
@@ -129,15 +174,17 @@ jobs:
 
             const replacement = [
               "<!-- merged-contributions:start -->",
-              `**${mergedCount} merged upstream PRs across ${repositoryCount} upstream ${repositoryLabel} · ${reviewedCount} distinct upstream PRs reviewed**`,
+              `**${mergedCount} merged upstream PRs across ${repositoryCount} ${repositoryLabel} · ${reviewedCount.toLocaleString("en-US")} distinct upstream PRs reviewed**`,
               "<!-- merged-contributions:end -->",
             ].join("\n");
             const next = current.replace(marker, replacement);
 
+            const metricText =
+              `${mergedCount} merged upstream PRs across ${repositoryCount} ${repositoryLabel} · ` +
+              `${reviewedCount.toLocaleString("en-US")} distinct upstream PRs reviewed`;
+
             if (next === current) {
-              core.info(
-                `Open-source metrics are already ${mergedCount} merged upstream PRs across ${repositoryCount} upstream ${repositoryLabel} · ${reviewedCount} distinct upstream PRs reviewed`,
-              );
+              core.info(`Open-source metrics are already ${metricText}`);
               return;
             }
 
@@ -150,6 +197,4 @@ jobs:
               sha: file.data.sha,
             });
 
-            core.info(
-              `Updated open-source metrics to ${mergedCount} merged upstream PRs across ${repositoryCount} upstream ${repositoryLabel} · ${reviewedCount} distinct upstream PRs reviewed`,
-            );
+            core.info(`Updated open-source metrics to ${metricText}`);
