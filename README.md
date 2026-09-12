@@ -4,7 +4,7 @@ I build safe, secure, and reliable AI and autonomous systems for critical enviro
 
 [![Website](https://img.shields.io/badge/Website-0969DA?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=033B72)](https://sylvesterkaczmarek.com)
 [![Technical Portfolio](https://img.shields.io/badge/Technical%20Portfolio-6F42C1?style=for-the-badge&logo=githubpages&logoColor=white&labelColor=432874)](https://sylvesterkaczmarek.github.io/)
-[![Sylvester's Frontier](https://img.shields.io/badge/Sylvester%27s%20Frontier-F97316?style=for-the-badge&logo=rss&logoColor=white)](https://frontier.sylvesterkaczmarek.com/)
+[![Sylvester's Frontier](https://img.shields.io/badge/Sylvester%27s%20Frontier-F97316?style=for-the-badge&logo=rss&logoColor=white&labelColor=9A3412)](https://frontier.sylvesterkaczmarek.com/)
 
 ## Focus areas
 
@@ -26,6 +26,7 @@ Engineering contributions merged upstream into **OpenAI**, **Google DeepMind**, 
 [![OpenAI](https://img.shields.io/badge/OpenAI-Contributor-000000?logo=openai&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Aopenai+is%3Amerged)
 [![Google DeepMind](https://img.shields.io/badge/Google%20DeepMind-Contributor-4285F4)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Agoogle-deepmind+is%3Amerged)
 [![The Alan Turing Institute](https://img.shields.io/badge/Alan%20Turing%20Institute-Contributor-2D2D2D)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Aalan-turing-institute+is%3Amerged)
+[![NVIDIA](https://img.shields.io/badge/NVIDIA-Contributor-76B900?logo=nvidia&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3ANVIDIA+is%3Amerged)
 
 ## Featured
 
