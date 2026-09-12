@@ -4,7 +4,7 @@ I build safe, secure, and reliable AI and autonomous systems for critical enviro
 
 [![Website](https://img.shields.io/badge/Website-0969DA?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=033B72)](https://sylvesterkaczmarek.com)
 [![Technical Portfolio](https://img.shields.io/badge/Technical%20Portfolio-6F42C1?style=for-the-badge&logo=githubpages&logoColor=white&labelColor=432874)](https://sylvesterkaczmarek.github.io/)
-[![Sylvester's Frontier](https://img.shields.io/badge/Sylvester%27s%20Frontier-F97316?style=for-the-badge&logo=rss&logoColor=white&labelColor=9A3412)](https://frontier.sylvesterkaczmarek.com/)
+[![Sylvester's Frontier](https://img.shields.io/badge/Sylvester%27s%20Frontier-F97316?style=for-the-badge&logo=rss&logoColor=white)](https://frontier.sylvesterkaczmarek.com/)
 
 ## Focus areas
 
@@ -17,7 +17,7 @@ I build safe, secure, and reliable AI and autonomous systems for critical enviro
 
 ## Open-source engineering
 
-Engineering contributions merged into **OpenAI**, **Google DeepMind**, and **The Alan Turing Institute** codebases, spanning agent runtime safety, sandbox and tracing integrity, multi-agent systems, and scientific ML infrastructure.
+Engineering contributions merged upstream into **OpenAI**, **Google DeepMind**, **The Alan Turing Institute**, and **NVIDIA** codebases, spanning agent runtime safety, sandboxing and tracing integrity, multi-agent systems, robotics, and scientific ML infrastructure.
 
 <!-- merged-contributions:start -->
 **209 merged upstream PRs across 46 repositories · 1,084 distinct upstream PRs reviewed**
