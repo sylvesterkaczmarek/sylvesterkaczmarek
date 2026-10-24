@@ -23,10 +23,15 @@ Engineering contributions merged into projects maintained by **NASA**, **OpenAI*
 **694 merged upstream PRs across 128 repositories · 1,326 distinct upstream PRs reviewed**
 <!-- merged-contributions:end -->
 
+[![NASA](https://img.shields.io/badge/NASA-Contributor-0B3D91?logo=nasa&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Anasa+is%3Amerged)
 [![OpenAI](https://img.shields.io/badge/OpenAI-Contributor-000000?logo=openai&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Aopenai+is%3Amerged)
 [![Google DeepMind](https://img.shields.io/badge/Google%20DeepMind-Contributor-4285F4)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Agoogle-deepmind+is%3Amerged)
-[![The Alan Turing Institute](https://img.shields.io/badge/Alan%20Turing%20Institute-Contributor-2D2D2D)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Aalan-turing-institute+is%3Amerged)
+[![Google Research](https://img.shields.io/badge/Google%20Research-Contributor-1A73E8)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Agoogle-research+is%3Amerged)
+[![CISA](https://img.shields.io/badge/CISA-Contributor-005EA2)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Acisagov+is%3Amerged)
+[![Microsoft](https://img.shields.io/badge/Microsoft-Contributor-5E5E5E?logo=microsoft&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Amicrosoft+is%3Amerged)
 [![NVIDIA](https://img.shields.io/badge/NVIDIA-Contributor-76B900?logo=nvidia&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3ANVIDIA+is%3Amerged)
+[![GCHQ](https://img.shields.io/badge/GCHQ-Contributor-5D3A9B)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Agchq+is%3Amerged)
+[![The Alan Turing Institute](https://img.shields.io/badge/Alan%20Turing%20Institute-Contributor-2D2D2D)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Aalan-turing-institute+is%3Amerged)
 
 ## Featured
 
