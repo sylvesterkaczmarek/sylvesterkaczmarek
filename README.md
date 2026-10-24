@@ -17,7 +17,7 @@ I build safe, secure, and reliable AI and autonomous systems for critical enviro
 
 ## Open-source engineering
 
-Engineering contributions merged upstream into **OpenAI**, **Google DeepMind**, **NASA**, and **The Alan Turing Institute** codebases, spanning agent runtime safety, sandboxing and tracing integrity, multi-agent systems, robotics, and scientific ML infrastructure.
+Engineering contributions merged into projects maintained by **NASA**, **OpenAI**, **Google DeepMind**, **Google Research**, **CISA**, **Microsoft**, **NVIDIA**, **GCHQ**, and **The Alan Turing Institute**, spanning agent runtime safety, sandboxing, tracing integrity, multi-agent systems, robotics, and scientific ML infrastructure.
 
 <!-- merged-contributions:start -->
 **694 merged upstream PRs across 128 repositories · 1,326 distinct upstream PRs reviewed**
