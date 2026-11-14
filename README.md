@@ -19,7 +19,7 @@ I build safe, secure, and reliable AI and autonomous systems for critical enviro
 
 Engineering contributions merged into projects maintained by **NASA**, **OpenAI**, **Google DeepMind**, **Google Research**, **CISA**, **Microsoft**, **NVIDIA**, **GCHQ**, and **The Alan Turing Institute**, spanning agent runtime safety, sandboxing, tracing integrity, multi-agent systems, robotics, and scientific ML infrastructure.
 
-I also work with **Arm** as an **Arm Ambassador**, publishing technical work supported by open-source implementations.
+As an **Arm Ambassador**, I have published original research on **SME2-accelerated satellite signal acquisition**, combining custom vector kernels, experimental validation, and reproducible performance benchmarks.
 
 <!-- merged-contributions:start -->
 **756 merged upstream PRs across 142 repositories · 1,423 distinct upstream PRs reviewed**
@@ -34,11 +34,11 @@ I also work with **Arm** as an **Arm Ambassador**, publishing technical work sup
 [![NVIDIA](https://img.shields.io/badge/NVIDIA-Contributor-477D00?labelColor=4B5563&logo=nvidia&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3ANVIDIA+is%3Amerged)
 [![GCHQ](https://img.shields.io/badge/GCHQ-Contributor-6241A6?labelColor=4B5563&logo=github&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Agchq+is%3Amerged)
 [![The Alan Turing Institute](https://img.shields.io/badge/Alan%20Turing%20Institute-Contributor-A22573?labelColor=4B5563&logo=github&logoColor=white)](https://github.com/pulls?q=is%3Apr+author%3Asylvesterkaczmarek+org%3Aalan-turing-institute+is%3Amerged)
-[![Arm Ambassador](https://img.shields.io/badge/Arm-Ambassador-0091BD?labelColor=4B5563&logo=arm&logoColor=white)](https://developer.arm.com/arm-developer-program/ambassadors)
+[![Arm Ambassador](https://img.shields.io/badge/Arm-Ambassador-0091BD?labelColor=4B5563&logo=arm&logoColor=white)](https://github.com/sylvesterkaczmarek/satcom-fec-trust-lab)
 
 ### Selected technical publications
 
-- **[Accelerating digital signal processing with Arm SME2 for satellite signal acquisition](https://developer.arm.com/community/arm-community-blogs/b/architectures-and-processors-blog/posts/accelerating-digital-signal-processing-with-arm-sme2-for-satellite-signal-acquisition)** (Arm Developer, 2026) · [Open-source implementation and benchmarks](https://github.com/sylvesterkaczmarek/satcom-fec-trust-lab)
+- **[Accelerating digital signal processing with Arm SME2 for satellite signal acquisition](https://developer.arm.com/community/arm-community-blogs/b/architectures-and-processors-blog/posts/accelerating-digital-signal-processing-with-arm-sme2-for-satellite-signal-acquisition)** (Arm Developer, 2026)
 
 ## Featured
 
