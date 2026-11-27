@@ -47,43 +47,108 @@ jobs:
               url.searchParams.set("q", query);
               url.searchParams.set("per_page", String(perPage));
               url.searchParams.set("page", String(page));
+              url.searchParams.set("sort", "created");
+              url.searchParams.set("order", "asc");
 
-              const response = await fetch(url, {
-                headers: {
-                  Accept: "application/vnd.github+json",
-                  Authorization: `Bearer ${process.env.PROFILE_GITHUB_TOKEN}`,
-                  "X-GitHub-Api-Version": "2022-11-28",
-                  "User-Agent": "open-source-profile-metrics",
-                },
-              });
+              for (let attempt = 0; attempt < 4; attempt += 1) {
+                const response = await fetch(url, {
+                  headers: {
+                    Accept: "application/vnd.github+json",
+                    Authorization: `Bearer ${process.env.PROFILE_GITHUB_TOKEN}`,
+                    "X-GitHub-Api-Version": "2022-11-28",
+                    "User-Agent": "open-source-profile-metrics",
+                  },
+                });
 
-              if (!response.ok) {
-                throw new Error(
-                  `${label} search failed with ${response.status}: ${await response.text()}`,
-                );
+                if (!response.ok) {
+                  const body = await response.text();
+                  const retryAfter = response.headers.get("retry-after");
+                  const exhausted = response.headers.get("x-ratelimit-remaining") === "0";
+                  const throttled = response.status === 429 ||
+                    (response.status === 403 && (exhausted || retryAfter !== null || /rate limit/i.test(body)));
+                  if (throttled && attempt < 3) {
+                    const reset = Number(response.headers.get("x-ratelimit-reset")) * 1000;
+                    const delay = retryAfter !== null
+                      ? Math.max(1000, Number(retryAfter) * 1000 + 1000)
+                      : exhausted && reset > Date.now()
+                        ? reset - Date.now() + 1000
+                        : 60000 * (attempt + 1);
+                    core.info(`${label}: rate limited; waiting before retry`);
+                    await new Promise((resolve) => setTimeout(resolve, delay));
+                    continue;
+                  }
+                  throw new Error(`${label} search failed with ${response.status}: ${body}`);
+                }
+
+                const data = await response.json();
+                if (!data.incomplete_results) {
+                  if (!Number.isSafeInteger(data.total_count) || data.total_count < 0 ||
+                      !Array.isArray(data.items)) {
+                    throw new Error(`${label} search returned invalid results`);
+                  }
+                  return data;
+                }
+                if (attempt < 3) {
+                  await new Promise((resolve) => setTimeout(resolve, 1000 * 2 ** attempt));
+                }
               }
-
-              return response.json();
+              throw new Error(`${label} search returned incomplete results after retries`);
             }
 
             async function searchPullRequests(query, label) {
-              const results = [];
+              const limit = 1000;
+              const pageSize = 100;
+              const results = new Map();
+              const format = (second) =>
+                new Date(second * 1000).toISOString().replace(".000Z", "+00:00");
+              // Use inclusive UTC-second ranges with no overlap or gaps.
+              const firstSecond = Date.parse("2008-01-01T00:00:00Z") / 1000;
+              const lastSecond = Math.floor(Date.now() / 1000);
 
-              for (let page = 1; page <= 10; page += 1) {
-                const data = await githubSearch(query, label, 100, page);
-                const items = data.items ?? [];
-                results.push(...items);
+              async function collect(start, end) {
+                const range = `${query} merged:${format(start)}..${format(end)}`;
+                const first = await githubSearch(range, label, pageSize, 1);
+                const total = first.total_count;
 
-                if (items.length < 100 || results.length >= data.total_count) {
-                  break;
+                if (total > limit) {
+                  if (start === end) {
+                    throw new Error(`${label}: more than ${limit} PRs merged in one second`);
+                  }
+                  const midpoint = start + Math.floor((end - start) / 2);
+                  const left = await collect(start, midpoint);
+                  const right = await collect(midpoint + 1, end);
+                  if (left + right !== total) {
+                    throw new Error(`${label} search totals changed during partitioning; rerun to avoid undercounting`);
+                  }
+                  return total;
                 }
 
-                if (page === 10) {
-                  throw new Error(`${label} search exceeded the 1,000-result Search API limit`);
+                const initialSize = results.size;
+                for (let page = 1; page <= Math.max(1, Math.ceil(total / pageSize)); page += 1) {
+                  const data = page === 1 ? first : await githubSearch(range, label, pageSize, page);
+                  const expected = Math.min(pageSize, total - (page - 1) * pageSize);
+                  if (data.total_count !== total || data.items.length !== expected) {
+                    throw new Error(`${label} search changed during pagination; rerun to avoid undercounting`);
+                  }
+                  for (const pr of data.items) {
+                    if (!Number.isSafeInteger(pr.id)) {
+                      throw new Error(`${label} search returned a PR without a valid ID`);
+                    }
+                    results.set(pr.id, pr);
+                  }
                 }
+                if (results.size - initialSize !== total) {
+                  throw new Error(`${label} search returned duplicate or missing PRs; rerun to avoid undercounting`);
+                }
+                return total;
               }
 
-              return results;
+              const total = await collect(firstSecond, lastSecond);
+              if (results.size !== total) {
+                throw new Error(`${label} search result count does not match the partition totals`);
+              }
+              core.info(`${label} search retrieved ${total} distinct PRs before exclusions`);
+              return [...results.values()];
             }
 
             async function searchPullRequestCount(query, label) {
